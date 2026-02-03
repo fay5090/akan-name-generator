@@ -1,31 +1,16 @@
+/* General body styles */
 body {
-<<<<<<< HEAD
-  font-family: Arial, sans-serif;
-  background:wheat;
-=======
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #f5deb3, #f0c27b);
   margin: 0;
   padding: 0;
->>>>>>> 9a43266d039ce9f2be935da377338b3ac08fe443
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-<<<<<<< HEAD
-  margin: 0;
 }
 
-.container {
-  background: maroon;
-  padding: 25px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-=======
-}
-
+/* Container for the form */
 .container {
   background-color: #ffffff;
   padding: 25px 30px;
@@ -33,23 +18,26 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   width: 360px;
   animation: fadeIn 0.6s ease-in-out;
->>>>>>> 9a43266d039ce9f2be935da377338b3ac08fe443
 }
 
+/* Heading */
 h1 {
   text-align: center;
-<<<<<<< HEAD
-  color:azure;
-=======
   color: #8b4513;
   margin-bottom: 5px;
 }
 
-p {
+/* Description text */
+.description {
   text-align: center;
   margin-bottom: 20px;
   color: #666;
   font-size: 14px;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 15px;
 }
 
 label {
@@ -59,33 +47,29 @@ label {
   color: #333;
 }
 
-input[type="date"],
+/* Inputs and select */
+input[type="number"],
 select {
   width: 100%;
   padding: 10px;
-  margin-bottom: 18px;
-  border: 1px solid #ccc;
   border-radius: 6px;
+  border: 1px solid #ccc;
   font-size: 14px;
 }
 
-input[type="date"]:focus,
+input[type="number"]:focus,
 select:focus {
   outline: none;
   border-color: #8b4513;
   box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
 }
 
+/* Gender dropdown */
 .gender {
   margin-bottom: 18px;
 }
 
-.gender label {
-  font-weight: normal;
-  margin-right: 15px;
-  cursor: pointer;
-}
-
+/* Button styling */
 .button {
   width: 100%;
   padding: 12px;
@@ -104,67 +88,13 @@ select:focus {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Result text */
 #result {
   margin-top: 18px;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
-  color: #333;
-}
-
-/* Small animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
->>>>>>> 9a43266d039ce9f2be935da377338b3ac08fe443
-}
-
-.description {
-  text-align: center;
-  color:black;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input, select {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-.button {
-  width: 100%;
-  padding: 12px;
-  background:pink;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.button:hover {
-  background: #4338ca;
-}
-
-.result {
-  margin-top: 15px;
-  text-align: center;
-  font-weight: bold;
   color: cadetblue;
 }
+
 

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.getElementById("akanForm").addEventListener("submit", function (e) {
   e.preventDefault();
 
@@ -25,82 +24,23 @@ document.getElementById("akanForm").addEventListener("submit", function (e) {
   // apply the formula
   const d =
     ( (4 * CC - 2 * CC - 1) +
-      (5 * YY) +
-      Math.floor((26 * (month + 1)) / 10) +
+      (45 * YY) +
+      Math.floor((1026 * (month + 1)) / 10) +
       day
     ) % 7;
 
   // Akan names
-  const maleNames = [
-    "Kwasi", "Kwadwo", "Kwabena",
-    "Kwaku", "Yaw", "Kofi", "Kwame"
-  ];
+  const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+  const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-  const femaleNames = [
-    "Akosua", "Adwoa", "Abenaa",
-    "Akua", "Yaa", "Afua", "Ama"
-  ];
-
+  // get Akan name
   let akanName;
-
   if (gender === "male") {
     akanName = maleNames[d];
   } else {
     akanName = femaleNames[d];
   }
 
-  result.textContent = "Your Akan name is " + akanName + ".";
+  // display result
+  result.textContent = `Your Akan name is ${akanName}`;
 });
-=======
-// Akan names for each day of the week
-const maleNames = [
-  "Kwasi",   // Sunday
-  "Kwadwo",  // Monday
-  "Kwabena", // Tuesday
-  "Kwaku",   // Wednesday
-  "Yaw",     // Thursday
-  "Kofi",    // Friday
-  "Kwame"    // Saturday
-];
-
-const femaleNames = [
-  "Akosua",  // Sunday
-  "Adwoa",   // Monday
-  "Abenaa",  // Tuesday
-  "Akua",    // Wednesday
-  "Yaa",     // Thursday
-  "Afua",    // Friday
-  "Ama"      // Saturday
-];
-
-// Listen to form submission
-document.getElementById("akanForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-
-  // Get user input
-  const dob = document.getElementById("dob").value;
-  const gender = document.querySelector('input[name="gender"]:checked');
-
-  // Validate input
-  if (!dob || !gender) {
-    alert("Please fill in all fields");
-    return;
-  }
-
-  // Get day of the week
-  const date = new Date(dob);
-  const day = date.getDay(); // 0–6
-
-  // Pick Akan name
-  let akanName;
-  if (gender.value === "male") {
-    akanName = maleNames[day];
-  } else {
-    akanName = femaleNames[day];
-  }
-
-  // Display result
-  document.querySelector("#akanNameDisplay").innerText = akanName;
-});
-
->>>>>>> 9a43266d039ce9f2be935da377338b3ac08fe443
