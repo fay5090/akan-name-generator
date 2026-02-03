@@ -39,7 +39,7 @@ label {
   color: #333;
 }
 
-input[type="number"] select {
+input[type="date"] select {
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
@@ -52,7 +52,7 @@ input[type="number"] select {
   margin-bottom: 15px;
 }
 
-.gender label {
+.label {
   font-weight: normal;
   margin-right: 10px;
 }

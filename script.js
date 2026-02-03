@@ -11,8 +11,8 @@ const femaleNames=[
 
 
 //listen-to-form-submittion 
-document.getElementById("akanForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+document.getElementById("akanForm").addEventListener("submit", function (e){
+e.preventDefault();
 
   // Get user input
   const dob = document.getElementById("dob").value;
@@ -33,9 +33,4 @@ document.getElementById("akanForm").addEventListener("submit", function (e) {
   } else {
     akanName = femaleNames[day];
   }
- // Display result
-  document.getElementById("result").textContent =
-    "Your Akan name is " + akanName;
-});
-
-
+})
