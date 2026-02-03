@@ -23,3 +23,13 @@ document.getElementById("akanForm").addEventListener("submit", function (e) {
     alert("Please fill in all fields");
     return;
   }
+  // Calculate day of birth
+  const date = new Date(dob);
+  const day = date.getDay();
+ // Pick Akan name based on gender
+  let akanName;
+  if (gender.value === "male") {
+    akanName = maleNames[day];
+  } else {
+    akanName = femaleNames[day];
+  }
