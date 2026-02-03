@@ -1,5 +1,5 @@
-Nice, this will make your project look **complete and professional** 👍
-Here’s a **clean, simple README** you can submit without it sounding robotic.
+Nice, this will make your project look **complete and professional** 
+Heres a **clean, simple README** you can submit without it sounding robotic.
 
 You can copy-paste this into a file called **`README.md`**.
 

@@ -33,4 +33,6 @@ e.preventDefault();
   } else {
     akanName = femaleNames[day];
   }
+  //Displaying results
+  document.querySelector("#akanNameDisplay").innerText='${akanName}'
 })
