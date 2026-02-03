@@ -1,10 +1,18 @@
 body {
+<<<<<<< HEAD
   font-family: Arial, sans-serif;
   background:wheat;
+=======
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5deb3, #f0c27b);
+  margin: 0;
+  padding: 0;
+>>>>>>> 9a43266d039ce9f2be935da377338b3ac08fe443
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+<<<<<<< HEAD
   margin: 0;
 }
 
@@ -15,11 +23,106 @@ body {
   width: 100%;
   max-width: 400px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+=======
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 360px;
+  animation: fadeIn 0.6s ease-in-out;
+>>>>>>> 9a43266d039ce9f2be935da377338b3ac08fe443
 }
 
 h1 {
   text-align: center;
+<<<<<<< HEAD
   color:azure;
+=======
+  color: #8b4513;
+  margin-bottom: 5px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+input[type="date"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input[type="date"]:focus,
+select:focus {
+  outline: none;
+  border-color: #8b4513;
+  box-shadow: 0 0 0 2px rgba(139, 69, 19, 0.2);
+}
+
+.gender {
+  margin-bottom: 18px;
+}
+
+.gender label {
+  font-weight: normal;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #8b4513, #a0522d);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+  margin-top: 18px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Small animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+>>>>>>> 9a43266d039ce9f2be935da377338b3ac08fe443
 }
 
 .description {
