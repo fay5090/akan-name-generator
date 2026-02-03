@@ -18,4 +18,40 @@
     <!-- ONE FORM ONLY -->
     <form id="akanForm">
 
-      <div class="form-g
+      <div class="form-group">
+        <label for="day">Day:</label>
+        <input type="number" id="day" placeholder="e.g 15" required>
+      </div>
+
+      <div class="form-group">
+        <label for="month">Month:</label>
+        <input type="number" id="month" placeholder="e.g 8" required>
+      </div>
+
+      <div class="form-group">
+        <label for="year">Year:</label>
+        <input type="number" id="year" placeholder="e.g 1998" required>
+      </div>
+
+      <div class="gender">
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+          <option value="">-- select gender --</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+
+      <button type="submit" class="button">Get Akan Name</button>
+
+    </form>
+
+    <div id="results" class="results">
+      <h2 id="akanNameDisplay"></h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
