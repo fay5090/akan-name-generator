@@ -23,3 +23,87 @@ h1 {
     margin bottom: 10px ;
 
 }
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page backgrou
+
+/* Main container */
+.container {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Description text */
+p {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Date input */
+input[type="date"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Gender section */
+.gender {
+  margin-bottom: 15px;
+}
+
+.gender label {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+/* Submit button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Button hover */
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #222;
+}
