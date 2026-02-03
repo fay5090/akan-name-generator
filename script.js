@@ -4,4 +4,7 @@ const maleNames = [
   "Kwaku", "Yaw", "Kofi", "Kwame"
 ];
 
-
+const femaleNames = [
+  "Akosua", "Adwoa", "Abenaa",
+  "Akua", "Yaa", "Afua", "Ama"
+];
