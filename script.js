@@ -33,3 +33,9 @@ document.getElementById("akanForm").addEventListener("submit", function (e) {
   } else {
     akanName = femaleNames[day];
   }
+ // Display result
+  document.getElementById("result").textContent =
+    "Your Akan name is " + akanName;
+});
+
+
