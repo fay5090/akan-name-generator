@@ -9,13 +9,19 @@
 <body>
   <div class="container">
     <h1>Akan Name Generator</h1>
-   <p>This application calculates your Akan name based on the day your were born and your gender.</p>
+   <p class="description">This application calculates your Akan name based on the day you were born and your gender.</p>
 
-   <p>Enter your Date of birth below and choose your gender to generate your Akan name.😊✨👉</p>
+   <p class="instructions">Enter your Date of birth below and choose your gender to generate your Akan name.😊✨👉</p>
 
     <form id="akanForm">
-      <label for="birthdate">Birthdate:</label>
-      <input type="date" id="birthdate" required>
+    <label>Day:</label>
+    <input type="number" id="day" min="1" max="31" required>
+
+    <label> Month: </label>
+    <input type="number" id="month" min="1" max="12" required>
+
+    <label>Year</label>
+    <input type="number" id="year" min="1900" max="2026" required>
 
       <label for="gender">Gender:</label>
       <select id="gender" required>
